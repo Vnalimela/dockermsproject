@@ -4,32 +4,32 @@ services:
   movies:
     image: vani12346/moviesrepo:latest
     ports:
-      - 81:80
+      - "81:80"
     deploy:
       replicas: 3
       volumes:
-        - movies
+        - "movies"
   train:
     image: vani12346/trainrepo:latest
     ports:
-      - 82:80
+      - "82:80"
     deploy:
       replicas: 3
       volumes:
-        - train
+        - "train"
   dth:
     image: vani12346/dthrepo:latest
     ports:
-      - 83:80
+      - "83:80"
     deploy:
       replicas: 3
       volumes:
-        - dth
+        - "dth"
   recharge:
     image: vani12346/rechargerepo:latest
     ports:
-      - 84:80
+      - "84:80"
     deploy:
       replicas: 3
       volumes:
-        - recharge
+        - "recharge"
